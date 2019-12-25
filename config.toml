@@ -77,8 +77,8 @@ preserveTaxonomyNames = true
     # Medium = "xxoo"
 
 [params.gitalk] # Github: https://github.com/gitalk/gitalk
-    clientID = "6a28761dbce2864729c0" # Your client ID
-    clientSecret = "2a06ad907741f718f227336bc2c3c1ff01ea74b2" # Your client secret
+    clientID = "1179a38ac904130ae2bf" # Your client ID
+    clientSecret = "94a570cd5b595699757d0d05972a9f2cafa2873d" # Your client secret
     repo = "w01fb0ss.github.io" # The repo to store comments
     owner = "w01fb0ss" # Your GitHub ID
     admin= "w01fb0ss" # Required. Github repository owner and collaborators. (Users who having write access to this repository)
