@@ -35,11 +35,6 @@ preserveTaxonomyNames = true
     url = "/tags/"
     weight = 3
 
-  # [[menu.main]]
-  #   name = "Tools"
-  #   url = "/tools/"
-  #   weight = 4  
-
   [[menu.main]]
     name = "About"
     url = "/about/"
