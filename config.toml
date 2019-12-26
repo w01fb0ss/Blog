@@ -12,6 +12,7 @@ enableRobotsTXT = true # 支持 robots.txt
 preserveTaxonomyNames = true
 
 toc = true    # 是否开启目录
+autoCollapseToc = false   # Auto expand and collapse toc                              # 目录自动展开/折叠
 
 [blackfriday]
   hrefTargetBlank = true
