@@ -11,6 +11,8 @@ enableRobotsTXT = true # 支持 robots.txt
 
 preserveTaxonomyNames = true
 
+toc = true    # 是否开启目录
+
 [blackfriday]
   hrefTargetBlank = true
   nofollowLinks = true
