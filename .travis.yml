@@ -37,7 +37,6 @@ script:
   - git push --force --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master
 
 # before_deploy:
-#   # 防止其与 mogeko.github.io 冲突
 #   - rm -f CNAME
 
 # # 备份
