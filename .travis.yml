@@ -1,7 +1,7 @@
 language: go
 
 go:
-  - master # 指定Golang 1.8
+  - 1.13.6
 
 env:
  global:
@@ -20,10 +20,8 @@ before_install:
   # - sudo dpkg --force-all -i libstdc++6.deb
   # 安装 hugo （version: v0.54.0）
   # - wget -q -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_extended_0.55.6_Linux-64bit.deb
-  - url=$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | sed -r -n '/browser_download_url/{/Linux-64bit.deb/{s@[^:]*:[[:space:]]*"([^"]*)".*@\1@g;p;q}}')
-  - echo $url
-  - curl -OLkSs $url
-  - sudo dpkg -i hugo*.deb
+  - curl -LO https://github.com/gohugoio/hugo/releases/download/v0.64.1/hugo_0.64.1_Linux-64bit.deb
+  - sudo dpkg -i hugo_0.64.1_Linux-64bit.deb
 
 install:
 # 运行hugo命令
