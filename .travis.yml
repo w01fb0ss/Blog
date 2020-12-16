@@ -1,7 +1,7 @@
 language: go
 
 go:
-  - "1.13"
+  - "1.14"
 
 env:
  global:
@@ -14,7 +14,7 @@ env:
 #   only:
 #     - master
 
-before_install:
+install:
   # 安装依赖
   # - wget -q -O libstdc++6.deb http://ftp.us.debian.org/debian/pool/main/g/gcc-9/libstdc++6_9.2.1-21_amd64.deb
   # - sudo dpkg --force-all -i libstdc++6.deb
@@ -22,11 +22,11 @@ before_install:
   - wget https://github.com/gohugoio/hugo/releases/download/v0.58.3/hugo_0.58.3_Linux-64bit.deb
   - sudo dpkg -i hugo*.deb
 
-install:
+script:
 # 运行hugo命令
   - hugo
 
-script:
+after_script:
   - cd ./public
   - git init
   - git config user.name "w01fb0ss"
